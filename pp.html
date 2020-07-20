@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="le-edge" />
+<title>graph</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+<body>
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['','1 jan', '2 jan', '3 jan ','4 jan', '5 jan', '6 jan','7 jan','8 jan ','9 jan','10 jan','11 jan','12 jan','13 jan','14 jan','15 jan','16 jan','17 jan','18 jan ','19 jan ','20 jan','21 jan','22 jan','23 jan','24 jan','25 jan','26 jan','27 jan','28 jan','29 jan','30 jan','31 jan'],
+       // title:"Days",
+        datasets: [{
+            label: 'Currency exchange ',
+            data: [,,79.9065,80.0085,,,80.5175,,74.0965,79.162,78.8665,,,78.8225,78.72857,78.8825,78.8665,78.9567,,,78.785,79.1345,78.8665,79.0965,78.67,,,,78.4545,78.417,79.011,78.9055,],
+           /*backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+           'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],*/
+            borderColor: [
+               /* 'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'*/
+            ],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            yAxes:  [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+</body>

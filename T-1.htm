@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title> Graph</title>
+	<!--style type="text/css">
+		
+		padding: 0;
+		margin: 0;
+	</style-->
+	<link rel="Stylesheet" href="style.css">
+
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['month', 'Euro',],
+          ['', 00       ],
+          ['1jan',null     ],
+          ['2 jan', 79.9065],
+          ['3 jan', 80.0085],
+          ['4 jan', null   ],
+          ['5 jan', null   ],
+          ['6 jan', 80.5175],
+          ['7 jan', null   ],
+          ['8 jan', 74.0965],
+          ['9 jan', 79.162 ],
+          ['10 jan',78.8665],
+          ['11 jan',null   ],
+          ['12 jan',null   ],
+          ['13 jan',78.8225],
+          ['14 jan',78.7285],
+          ['15 jan',78.8825],
+          ['16 jan',78.8665],
+          ['17 jan',78.9567],
+          ['18 jan',null   ],
+          ['19 jan',null   ],
+          ['20 jan',78.784 ],
+          ['21 jan',79.1345],
+          ['22 jan',78.8665],
+          ['23 jan',79.0965],
+          ['24 jan',78.67  ],
+          ['25 jan',null   ],
+          ['26 jan',null   ],
+          ['27 jan',null   ],
+          ['28 jan',78.4545],
+          ['29 jan',78.417 ],
+          ['30 jan',79.011 ],
+          ['31 jan',78.9055],
+        ]);
+
+        var options = {
+          title: 'money chart',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+	 <div id="curve_chart" style="width: 3000px; height: 900px"></div>
+
+
+
+</body>
+</html>
